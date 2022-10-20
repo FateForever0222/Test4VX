@@ -1,9 +1,6 @@
 # 创建应用实例
 import sys
 
-from flask import Flask, render_template, request, redirect, url_for, flash, session
-
-
 from wxcloudrun import app
 
 
