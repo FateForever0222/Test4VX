@@ -7,9 +7,6 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 from wxcloudrun import app
 
 
-@app.route('/')
-def login():
-    return render_template('login.html')
 # 启动Flask Web服务
 if __name__ == '__main__':
     app.run(host=sys.argv[1], port=sys.argv[2])
