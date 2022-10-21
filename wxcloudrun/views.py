@@ -12,6 +12,5 @@ def before_request():
 
 def login():
     user_wx_openid=request.headers.get('x-wx-openid')
-    print(user_wx_openid)
-    return render_template('login.html')
+    return render_template('login.html',openid=user_wx_openid)
 
