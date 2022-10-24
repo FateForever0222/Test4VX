@@ -1,14 +1,8 @@
 from time import time
 from flask import render_template, request
 from run import app
-import os
-import execjs
-# from flask_cors import CORS
-# CORS(app)
 import requests
-from flask_cors import cross_origin
 @app.route('/')
-@cross_origin()
 def login():
     user_wx_openid=request.headers.get('x-wx-openid')
     return render_template('login.html',openid=user_wx_openid)
