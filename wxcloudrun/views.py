@@ -5,6 +5,7 @@ from run import app
 
 def login():
     user_wx_openid=request.headers.get('x-wx-openid')
+    
     return render_template('login.html',openid=user_wx_openid)
 
 @app.route("/MP_verify_PertlLt3DIqUIQJv.txt")
