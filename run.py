@@ -1,10 +1,8 @@
 # 创建应用实例
-import sys
-
+import os
 from wxcloudrun import app
 
 
 # 启动Flask Web服务
 if __name__ == '__main__':
-    app.run(host=sys.argv[1], port=sys.argv[2])
-    # app.run(port=80)
+    app.run(debug=True,host='0.0.0.0',port=80)
